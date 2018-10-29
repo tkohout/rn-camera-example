@@ -34,6 +34,7 @@
 		2D02E4C81E0B4AEC006451C7 /* libRCTWebSocket-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3E991DF850E9000B6D8A /* libRCTWebSocket-tvOS.a */; };
 		2D02E4C91E0B4AEC006451C7 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EA31DF850E9000B6D8A /* libReact.a */; };
 		2DCD954D1E0B4F2C00145EB5 /* RNCameraExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* RNCameraExampleTests.m */; };
+		5B23D95A49CC48F28E2D2768 /* libRNWikitude.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BDB6357F23684C9299986E89 /* libRNWikitude.a */; };
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		71169F7C2024F47400B79C53 /* libRNCamera.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 71169F7B2024F45100B79C53 /* libRNCamera.a */; };
 		71B587402022584D00B133C7 /* GoogleMobileVision.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71B5871A2022584C00B133C7 /* GoogleMobileVision.framework */; };
@@ -68,6 +69,8 @@
 		71B587662022585C00B133C7 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71B587642022585700B133C7 /* AddressBook.framework */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
+		C3A8A4F82183877A006D6A4A /* WikitudeSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3A8A4F72183877A006D6A4A /* WikitudeSDK.framework */; };
+		C3A8A4F92183877A006D6A4A /* WikitudeSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C3A8A4F72183877A006D6A4A /* WikitudeSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -351,7 +354,28 @@
 			remoteGlobalIDString = 358F4ED71D1E81A9004DF814;
 			remoteInfo = RCTBlob;
 		};
+		C30F8F2D218781C000D1EC55 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD447E24C892497683D25E42 /* RNWikitude.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E9BF6EC21F6054D0008F6A40;
+			remoteInfo = RNWikitude;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C3A8A4FA2183877A006D6A4A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C3A8A4F92183877A006D6A4A /* WikitudeSDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
@@ -400,6 +424,10 @@
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
+		BDB6357F23684C9299986E89 /* libRNWikitude.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNWikitude.a; sourceTree = "<group>"; };
+		C34BA4E7218384EC006ECCC0 /* WikitudeSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WikitudeSDK.framework; path = "/Users/tomas/Development/iOS/rncamera-example/node_modules/react-native-wikitude/ios/RNWikitude/WikitudeSDK.framework"; sourceTree = "<absolute>"; };
+		C3A8A4F72183877A006D6A4A /* WikitudeSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WikitudeSDK.framework; path = Frameworks/WikitudeSDK/WikitudeSDK.framework; sourceTree = "<group>"; };
+		CD447E24C892497683D25E42 /* RNWikitude.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNWikitude.xcodeproj; path = "../node_modules/react-native-wikitude/ios/RNWikitude/RNWikitude.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -424,6 +452,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				71169F7C2024F47400B79C53 /* libRNCamera.a in Frameworks */,
+				C3A8A4F82183877A006D6A4A /* WikitudeSDK.framework in Frameworks */,
 				71B587652022585800B133C7 /* AddressBook.framework in Frameworks */,
 				ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */,
 				5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */,
@@ -445,6 +474,7 @@
 				71B587522022584D00B133C7 /* GoogleUtilities.framework in Frameworks */,
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
+				5B23D95A49CC48F28E2D2768 /* libRNWikitude.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -826,6 +856,7 @@
 				832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */,
 				00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */,
 				139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */,
+				CD447E24C892497683D25E42 /* RNWikitude.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -842,11 +873,13 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				C3A8A4F72183877A006D6A4A /* WikitudeSDK.framework */,
 				71E0ECC620179EE100791E5C /* Frameworks */,
 				13B07FAE1A68108700A75B9A /* RNCameraExample */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* RNCameraExampleTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
+				C37E6E3D218375D20063AFAF /* Recovered References */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -871,6 +904,23 @@
 				71B586E4202257EF00B133C7 /* libRCTBlob-tvOS.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		C30F8F2A218781C000D1EC55 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C30F8F2E218781C000D1EC55 /* libRNWikitude.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C37E6E3D218375D20063AFAF /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				C34BA4E7218384EC006ECCC0 /* WikitudeSDK.framework */,
+				BDB6357F23684C9299986E89 /* libRNWikitude.a */,
+			);
+			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -902,6 +952,7 @@
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				C3A8A4FA2183877A006D6A4A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -959,11 +1010,11 @@
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
-						DevelopmentTeam = PEG44W5TBT;
+						DevelopmentTeam = 56QMJ73J7W;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						DevelopmentTeam = PEG44W5TBT;
+						DevelopmentTeam = 56QMJ73J7W;
 						ProvisioningStyle = Automatic;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
@@ -1040,6 +1091,10 @@
 				{
 					ProductGroup = 71169F772024F45100B79C53 /* Products */;
 					ProjectRef = 71169F762024F45100B79C53 /* RNCamera.xcodeproj */;
+				},
+				{
+					ProductGroup = C30F8F2A218781C000D1EC55 /* Products */;
+					ProjectRef = CD447E24C892497683D25E42 /* RNWikitude.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -1319,6 +1374,13 @@
 			remoteRef = ADBDB9261DFEBF0700ED6528 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		C30F8F2E218781C000D1EC55 /* libRNWikitude.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNWikitude.a;
+			remoteRef = C30F8F2D218781C000D1EC55 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -1382,7 +1444,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
 		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1467,7 +1529,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = PEG44W5TBT;
+				DEVELOPMENT_TEAM = 56QMJ73J7W;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks/Detector/Frameworks/frameworks",
@@ -1485,6 +1547,8 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-camera/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-wikitude/ios/RNWikitude/RNWikitude",
+					"$(SRCROOT)/../node_modules/react-native-wikitude/ios/RNWikitude/RNWikitude/**",
 				);
 				INFOPLIST_FILE = RNCameraExampleTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1508,7 +1572,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
-				DEVELOPMENT_TEAM = PEG44W5TBT;
+				DEVELOPMENT_TEAM = 56QMJ73J7W;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks/Detector/Frameworks/frameworks",
@@ -1522,6 +1586,8 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-camera/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-wikitude/ios/RNWikitude/RNWikitude",
+					"$(SRCROOT)/../node_modules/react-native-wikitude/ios/RNWikitude/RNWikitude/**",
 				);
 				INFOPLIST_FILE = RNCameraExampleTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1548,7 +1614,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
-				DEVELOPMENT_TEAM = PEG44W5TBT;
+				DEVELOPMENT_TEAM = 56QMJ73J7W;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks/Detector/Frameworks/frameworks",
@@ -1558,10 +1624,14 @@
 					"$(PROJECT_DIR)/Frameworks/GoogleNetworkingUtilities-1.2.2/Frameworks/frameworks",
 					"$(PROJECT_DIR)/Frameworks/MVDataOutput/Frameworks/frameworks",
 					"$(PROJECT_DIR)/Frameworks/GoogleSymbolUtilities-1.1.1/Frameworks",
+					"$(PROJECT_DIR)/Frameworks/WikitudeSDK/",
+					"$(PROJECT_DIR)/Frameworks/WikitudeSDK",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-camera/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-wikitude/ios/RNWikitude/RNWikitude",
+					"$(SRCROOT)/../node_modules/react-native-wikitude/ios/RNWikitude/RNWikitude/**",
 				);
 				INFOPLIST_FILE = RNCameraExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1571,6 +1641,7 @@
 					"-lc++",
 					"-lz",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = cz.tomaskohout.example;
 				PRODUCT_NAME = RNCameraExample;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1584,7 +1655,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = PEG44W5TBT;
+				DEVELOPMENT_TEAM = 56QMJ73J7W;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks/Detector/Frameworks/frameworks",
@@ -1594,10 +1665,14 @@
 					"$(PROJECT_DIR)/Frameworks/GoogleNetworkingUtilities-1.2.2/Frameworks/frameworks",
 					"$(PROJECT_DIR)/Frameworks/MVDataOutput/Frameworks/frameworks",
 					"$(PROJECT_DIR)/Frameworks/GoogleSymbolUtilities-1.1.1/Frameworks",
+					"$(PROJECT_DIR)/Frameworks/WikitudeSDK/",
+					"$(PROJECT_DIR)/Frameworks/WikitudeSDK",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-camera/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-wikitude/ios/RNWikitude/RNWikitude",
+					"$(SRCROOT)/../node_modules/react-native-wikitude/ios/RNWikitude/RNWikitude/**",
 				);
 				INFOPLIST_FILE = RNCameraExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1607,6 +1682,7 @@
 					"-lc++",
 					"-lz",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = cz.tomaskohout.example;
 				PRODUCT_NAME = RNCameraExample;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1628,6 +1704,8 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-camera/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-wikitude/ios/RNWikitude/RNWikitude",
+					"$(SRCROOT)/../node_modules/react-native-wikitude/ios/RNWikitude/RNWikitude/**",
 				);
 				INFOPLIST_FILE = "RNCameraExample-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1662,6 +1740,8 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-camera/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-wikitude/ios/RNWikitude/RNWikitude",
+					"$(SRCROOT)/../node_modules/react-native-wikitude/ios/RNWikitude/RNWikitude/**",
 				);
 				INFOPLIST_FILE = "RNCameraExample-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

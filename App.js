@@ -1,6 +1,8 @@
 import React from 'react';
 import { StyleSheet, Text, View, TouchableOpacity, Slider } from 'react-native';
 import { RNCamera } from 'react-native-camera';
+import Wikitude from 'react-native-wikitude';
+import { NativeEventEmitter, NativeModules } from 'react-native'
 
 const landmarkSize = 2;
 
@@ -60,10 +62,31 @@ export default class CameraScreen extends React.Component {
   }
 
   toggleFlash() {
-    this.setState({
-      flash: flashModeOrder[this.state.flash],
-    });
+    Wikitude.startAR(
+      'http://192.168.15.18/~tomas/wikitude-sdk-samples-master/04_CloudRecognition_2_ContinuousImageRecognition/index.html',
+       true, true, true, 
+       "sjBcpdQjTky0I/LdId5SvJysjSDyMqhiL2noR8kJsvjxfP3Q7BfqtVvX6LRoPjHJnR09+emEwH45C2B8/iQzXdw/mbyFk30WEjSj7XcwV7xb2uxgvaIDtuTiOCtywEvC5bBI9FZj8uNIUdDk1EUl7mShAksowOCIQCGo98Ogjv5TYWx0ZWRfX2QuNoGeqWNy/o1ES2mHThh6+ZmEtVgFu7hA8Hd65HPiATRvMrXrfV/REvEBAjg8AZ1SgqpQAYOQLYe9qP7DEWTwydVM+Puoqr2e068Pz1v6uStsK/9D8PHjyRHpuKV80McSJOSYUu+Cs4csfnIrfsLxUz8Qi14tCWm0gm5zpPttWW1oKGO8gVra/rVz6GekIhdkOAVgn1XZn60fuGhissKT8p7sKR2yUT2hzT1MLXkYm8rQbjjco+gXB+4bNfnPX+9dQ1FuHzZ4Tr21nZrn0ff509uzWgCSKGTc4HseaF5sFWSTwx1nwREMGmKl5eQqkXD36V1pSARmTIy+qjPOI8qBBQ+vNeIjl70isUoHQbDL+8ZnPDvmWDpPoVbI3Fds1oHaWV9Vg2wB8Pkl6gFz6C/0OOxa6Kc7cwCVjywlYejdPyT2muJ/AiUOGFvobMYjDUYL23pUruQhQviA8e0LmjA8vyclYpvF6Ub71MZbX9+VfiAXmSv2/MIFeTymnUfjpaQKmqD1kun/I0HzAMLuYNWS5DCq0RoyjA=="
+      )
+
+
+    const wikitude = NativeModules.Wikitude
+    const wikitudeEmitter = new NativeEventEmitter(Wikitude)
+    const subscription = wikitudeEmitter.addListener('json-sent', (data) => { 
+      // Read json
+      
+      // Dismiss
+      Wikitude.stopAR();
+    })
+
+
+    // this.setState({
+    //   flash: flashModeOrder[this.state.flash],
+    // });
   }
+
+
+  
+
 
   setRatio(ratio) {
     this.setState({
@@ -215,9 +238,9 @@ export default class CameraScreen extends React.Component {
         zoom={this.state.zoom}
         whiteBalance={this.state.whiteBalance}
         ratio={this.state.ratio}
-        faceDetectionLandmarks={RNCamera.Constants.FaceDetection.Landmarks.all}
-        onFacesDetected={this.onFacesDetected}
-        onFaceDetectionError={this.onFaceDetectionError}
+        // faceDetectionLandmarks={RNCamera.Constants.FaceDetection.Landmarks.all}
+        // onFacesDetected={this.onFacesDetected}
+        // onFaceDetectionError={this.onFaceDetectionError}
         focusDepth={this.state.depth}
         permissionDialogTitle={'Permission to use camera'}
         permissionDialogMessage={'We need your permission to use your camera phone'}
