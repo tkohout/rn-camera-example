@@ -44,6 +44,10 @@ export default class CameraScreen extends React.Component {
     isRecording: false
   };
 
+  data = null;
+
+
+
   getRatios = async function() {
     const ratios = await this.camera.getSupportedRatios();
     return ratios;
@@ -61,6 +65,8 @@ export default class CameraScreen extends React.Component {
     });
   }
 
+
+
   toggleFlash() {
     Wikitude.startAR(
       'http://192.168.15.18/~tomas/wikitude-sdk-samples-master/04_CloudRecognition_2_ContinuousImageRecognition/index.html',
@@ -73,9 +79,13 @@ export default class CameraScreen extends React.Component {
 
     const wikitude = NativeModules.Wikitude
     const wikitudeEmitter = new NativeEventEmitter(Wikitude)
+    var self = this 
+    
     const subscription = wikitudeEmitter.addListener('json-sent', (data) => { 
       // Read json
+
       console.log(data);
+      self.data = data;
       // Dismiss
       Wikitude.stopAR();
     })
