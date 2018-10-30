@@ -62,11 +62,12 @@ export default class CameraScreen extends React.Component {
   }
 
   toggleFlash() {
-    alert("test")
     Wikitude.startAR(
       'http://192.168.15.18/~tomas/wikitude-sdk-samples-master/04_CloudRecognition_2_ContinuousImageRecognition/index.html',
        true, true, true, 
-       "sjBcpdQjTky0I/LdId5SvJysjSDyMqhiL2noR8kJsvjxfP3Q7BfqtVvX6LRoPjHJnR09+emEwH45C2B8/iQzXdw/mbyFk30WEjSj7XcwV7xb2uxgvaIDtuTiOCtywEvC5bBI9FZj8uNIUdDk1EUl7mShAksowOCIQCGo98Ogjv5TYWx0ZWRfX2QuNoGeqWNy/o1ES2mHThh6+ZmEtVgFu7hA8Hd65HPiATRvMrXrfV/REvEBAjg8AZ1SgqpQAYOQLYe9qP7DEWTwydVM+Puoqr2e068Pz1v6uStsK/9D8PHjyRHpuKV80McSJOSYUu+Cs4csfnIrfsLxUz8Qi14tCWm0gm5zpPttWW1oKGO8gVra/rVz6GekIhdkOAVgn1XZn60fuGhissKT8p7sKR2yUT2hzT1MLXkYm8rQbjjco+gXB+4bNfnPX+9dQ1FuHzZ4Tr21nZrn0ff509uzWgCSKGTc4HseaF5sFWSTwx1nwREMGmKl5eQqkXD36V1pSARmTIy+qjPOI8qBBQ+vNeIjl70isUoHQbDL+8ZnPDvmWDpPoVbI3Fds1oHaWV9Vg2wB8Pkl6gFz6C/0OOxa6Kc7cwCVjywlYejdPyT2muJ/AiUOGFvobMYjDUYL23pUruQhQviA8e0LmjA8vyclYpvF6Ub71MZbX9+VfiAXmSv2/MIFeTymnUfjpaQKmqD1kun/I0HzAMLuYNWS5DCq0RoyjA=="
+       "InQzAh2G6f/gJqZluqwQemFT6jEsP+2QXTHZ4gmqxp9WT5yiDsIMIv8dZZPDwGiztFOnXVL7J8BU21ByRV3CxL923k9SLdKjRvtlN9nTj7nxBGLrK9zGrdlI8eYSM0an1J7HKCgo4kznVeOiY4910o1GT8dw4gs6ZN5SWZ7XmuRTYWx0ZWRfX2E1yuA4aeg+A0ikT1OJVMZZAv/04eyqPz39iN8Ot8XgYmthegJxnaZduQqB5hut0elhksNVQ14mkLLGiUuBA+idcqd99vFarJYLXaNwXT4HW1FZSSt/NdTiXXgANWnul9Uaj/1qFKM0ajMwUTDlgIzZ6OOi+eQvqDcbvk8DFhS9zOEcb3NNQfNwxoR5LEfmjSYIv5r3d6FRPRayd6wtCenY2NSnPIXlDcmYeXL6liL1GjvSo++XfEJ1WVB3hyr2gR8MUzp3JzEbbz6N/s6uUoSfpRKIFGwWcJOjhD9+cIo+j680M274qkm2whz75JUTTlzjOq91yc/usfKUPkk3l2N/Qu2s9k9Zu4dx9IWj1A2P0xsVwVbIzZuDp0D0dH/TiXa0OkboDYT7g/ZXV5D4nIYjgClBOVUknhXMQTB9E+gMO60msIPZnPkWcMScpLnbATQmiYexMjJybLrPqySdRo79HThmC/k+0wVdhF+fdTEI6NErV4ohK3C8S2gEKfWNkhM1vGwUzQr4xu8e9TE6N6OPudBrF+2fmQ=="
+
+       //"sjBcpdQjTky0I/LdId5SvJysjSDyMqhiL2noR8kJsvjxfP3Q7BfqtVvX6LRoPjHJnR09+emEwH45C2B8/iQzXdw/mbyFk30WEjSj7XcwV7xb2uxgvaIDtuTiOCtywEvC5bBI9FZj8uNIUdDk1EUl7mShAksowOCIQCGo98Ogjv5TYWx0ZWRfX2QuNoGeqWNy/o1ES2mHThh6+ZmEtVgFu7hA8Hd65HPiATRvMrXrfV/REvEBAjg8AZ1SgqpQAYOQLYe9qP7DEWTwydVM+Puoqr2e068Pz1v6uStsK/9D8PHjyRHpuKV80McSJOSYUu+Cs4csfnIrfsLxUz8Qi14tCWm0gm5zpPttWW1oKGO8gVra/rVz6GekIhdkOAVgn1XZn60fuGhissKT8p7sKR2yUT2hzT1MLXkYm8rQbjjco+gXB+4bNfnPX+9dQ1FuHzZ4Tr21nZrn0ff509uzWgCSKGTc4HseaF5sFWSTwx1nwREMGmKl5eQqkXD36V1pSARmTIy+qjPOI8qBBQ+vNeIjl70isUoHQbDL+8ZnPDvmWDpPoVbI3Fds1oHaWV9Vg2wB8Pkl6gFz6C/0OOxa6Kc7cwCVjywlYejdPyT2muJ/AiUOGFvobMYjDUYL23pUruQhQviA8e0LmjA8vyclYpvF6Ub71MZbX9+VfiAXmSv2/MIFeTymnUfjpaQKmqD1kun/I0HzAMLuYNWS5DCq0RoyjA=="
       )
 
 
@@ -74,7 +75,7 @@ export default class CameraScreen extends React.Component {
     const wikitudeEmitter = new NativeEventEmitter(Wikitude)
     const subscription = wikitudeEmitter.addListener('json-sent', (data) => { 
       // Read json
-      
+      console.log(data);
       // Dismiss
       Wikitude.stopAR();
     })

@@ -8,7 +8,7 @@
     "react-native": "^0.57.4",
     "react-native-camera": "git+ssh://git@github.com/react-native-community/react-native-camera#fd87a3475aedf64243fc0cc5f225dcbf2484bbab",
     "react-native-cli": "^2.0.1",
-    "react-native-wikitude": "file:../react-native-wikitude"
+    "react-native-wikitude": "git+ssh://git@github.com/tkohout/react-native-wikitude#fe6fb065054f36f2d5345e2cff3f349df4043670"
   },
   "devDependencies": {
     "babel-jest": "23.6.0",
