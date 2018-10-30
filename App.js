@@ -62,6 +62,7 @@ export default class CameraScreen extends React.Component {
   }
 
   toggleFlash() {
+    alert("test")
     Wikitude.startAR(
       'http://192.168.15.18/~tomas/wikitude-sdk-samples-master/04_CloudRecognition_2_ContinuousImageRecognition/index.html',
        true, true, true, 
