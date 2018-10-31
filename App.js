@@ -69,7 +69,7 @@ export default class CameraScreen extends React.Component {
 
   toggleFlash() {
     Wikitude.startAR(
-      'http://192.168.15.18/~tomas/wikitude-sdk-samples-master/04_CloudRecognition_2_ContinuousImageRecognition/index.html',
+      'http://192.168.15.29/~tomas/wikitude-sdk-samples-master/04_CloudRecognition_2_ContinuousImageRecognition/index.html',
        true, true, true, 
        "InQzAh2G6f/gJqZluqwQemFT6jEsP+2QXTHZ4gmqxp9WT5yiDsIMIv8dZZPDwGiztFOnXVL7J8BU21ByRV3CxL923k9SLdKjRvtlN9nTj7nxBGLrK9zGrdlI8eYSM0an1J7HKCgo4kznVeOiY4910o1GT8dw4gs6ZN5SWZ7XmuRTYWx0ZWRfX2E1yuA4aeg+A0ikT1OJVMZZAv/04eyqPz39iN8Ot8XgYmthegJxnaZduQqB5hut0elhksNVQ14mkLLGiUuBA+idcqd99vFarJYLXaNwXT4HW1FZSSt/NdTiXXgANWnul9Uaj/1qFKM0ajMwUTDlgIzZ6OOi+eQvqDcbvk8DFhS9zOEcb3NNQfNwxoR5LEfmjSYIv5r3d6FRPRayd6wtCenY2NSnPIXlDcmYeXL6liL1GjvSo++XfEJ1WVB3hyr2gR8MUzp3JzEbbz6N/s6uUoSfpRKIFGwWcJOjhD9+cIo+j680M274qkm2whz75JUTTlzjOq91yc/usfKUPkk3l2N/Qu2s9k9Zu4dx9IWj1A2P0xsVwVbIzZuDp0D0dH/TiXa0OkboDYT7g/ZXV5D4nIYjgClBOVUknhXMQTB9E+gMO60msIPZnPkWcMScpLnbATQmiYexMjJybLrPqySdRo79HThmC/k+0wVdhF+fdTEI6NErV4ohK3C8S2gEKfWNkhM1vGwUzQr4xu8e9TE6N6OPudBrF+2fmQ=="
 

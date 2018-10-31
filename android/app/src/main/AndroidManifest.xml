@@ -8,7 +8,7 @@
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
 
     <uses-sdk
-        android:minSdkVersion="16"
+        android:minSdkVersion="19"
         android:targetSdkVersion="26" />
 
     <application
@@ -30,6 +30,9 @@
         </intent-filter>
       </activity>
       <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+      <activity android:name="com.brave.wikitudebridge.WikitudeActivity" android:configChanges="orientation|keyboardHidden|screenSize" android:keepScreenOn="true" android:parentActivityName="com.brave.wikitudebridge.WikitudePrecheck"/>
+      <activity android:name="com.brave.wikitudebridge.WikitudePrecheck" android:configChanges="orientation|keyboardHidden|screenSize" android:keepScreenOn="true"/>
+
     </application>
 
 </manifest>
